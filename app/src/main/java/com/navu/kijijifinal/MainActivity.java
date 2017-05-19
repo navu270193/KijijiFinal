@@ -17,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ImageView im = (ImageView) findViewById(R.id.imageView12);
+        ImageView im = (ImageView) findViewById(R.id.imageView11);
         Button bt = (Button) findViewById(R.id.button);
-
+        ImageView ima = (ImageView) findViewById(R.id.imageView11);
 
 
 
@@ -42,15 +42,27 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
+        ima.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Post.class);
+                startActivity(intent);
+            }
 
+
+        });
     }
 
     void mainClick(View view) {
         setContentView(R.layout.activity_main2);
 
     }
-    void mainClick(Button view) {
+    void mainClick2(Button view) {
         setContentView(R.layout.activity_select_category);
+
+    }
+    void mainClick1(View view) {
+        setContentView(R.layout.activity_post);
 
     }
 }
