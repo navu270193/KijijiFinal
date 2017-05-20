@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".Main2Activity" />
         <activity android:name=".selectCategory" />
-        <activity android:name=".Post"></activity>
+        <activity android:name=".Post" />
+        <activity android:name=".MyMessages" />
+        <activity android:name=".MyKijiji"></activity>
     </application>
 
 </manifest>
