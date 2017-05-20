@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
 
-
+//navu
         });
         ima.setOnClickListener(new View.OnClickListener() {
             @Override
