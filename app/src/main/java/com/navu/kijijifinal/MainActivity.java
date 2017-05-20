@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView im = (ImageView) findViewById(R.id.imageView11);
         Button bt = (Button) findViewById(R.id.button);
         ImageView ima = (ImageView) findViewById(R.id.imageView11);
+        ImageView imag1 = (ImageView) findViewById(R.id.imageView10);
 
 
 
@@ -51,6 +52,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
+        imag1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MyKijiji.class);
+                startActivity(intent);
+            }
+
+
+        });
     }
 
     void mainClick(View view) {
@@ -63,6 +73,10 @@ public class MainActivity extends AppCompatActivity {
     }
     void mainClick1(View view) {
         setContentView(R.layout.activity_post);
+
+    }
+    void mainClick3(View view) {
+        setContentView(R.layout.activity_my_kijiji);
 
     }
 }
