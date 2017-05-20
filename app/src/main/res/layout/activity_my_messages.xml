@@ -223,7 +223,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="6dp"
             android:layout_marginTop="6dp"
-            android:background="@android:color/holo_orange_dark"
+            android:background="@android:color/transparent"
             app:srcCompat="@android:drawable/ic_menu_camera" />
 
         <TextView
@@ -273,7 +273,8 @@
             android:layout_height="29dp"
             android:layout_marginLeft="4dp"
             android:layout_marginTop="6dp"
-            app:srcCompat="@drawable/message" />
+
+            app:srcCompat="@drawable/messagea" />
 
         <TextView
             android:id="@+id/textView11"

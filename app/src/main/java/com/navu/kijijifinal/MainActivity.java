@@ -21,7 +21,18 @@ public class MainActivity extends AppCompatActivity {
         Button bt = (Button) findViewById(R.id.button);
         ImageView ima = (ImageView) findViewById(R.id.imageView11);
         ImageView imag1 = (ImageView) findViewById(R.id.imageView10);
+        ImageView imag2 = (ImageView) findViewById(R.id.imageView13);
 
+
+        imag2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MyMessages.class);
+                startActivity(intent);
+            }
+
+
+        });
 
 
         im.setOnClickListener(new View.OnClickListener() {
@@ -77,6 +88,10 @@ public class MainActivity extends AppCompatActivity {
     }
     void mainClick3(View view) {
         setContentView(R.layout.activity_my_kijiji);
+
+    }
+    void mainClick4(View view) {
+        setContentView(R.layout.activity_my_messages);
 
     }
 }

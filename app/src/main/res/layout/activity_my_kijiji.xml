@@ -234,7 +234,7 @@
                 android:layout_width="38dp"
                 android:layout_height="35dp"
                 android:layout_marginTop="5dp"
-                app:srcCompat="@drawable/user" />
+                app:srcCompat="@drawable/user1" />
 
             <TextView
                 android:id="@+id/MyKijiji"
