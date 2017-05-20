@@ -22,12 +22,21 @@ public class MainActivity extends AppCompatActivity {
         ImageView ima = (ImageView) findViewById(R.id.imageView11);
         ImageView imag1 = (ImageView) findViewById(R.id.imageView10);
         ImageView imag2 = (ImageView) findViewById(R.id.imageView13);
-
+        ImageView imag3 = (ImageView) findViewById(R.id.imageView12);
 
         imag2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MyMessages.class);
+                startActivity(intent);
+            }
+
+
+        });
+        imag3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
                 startActivity(intent);
             }
 
@@ -92,6 +101,10 @@ public class MainActivity extends AppCompatActivity {
     }
     void mainClick4(View view) {
         setContentView(R.layout.activity_my_messages);
+
+    }
+    void mainClick5(View view) {
+        setContentView(R.layout.activity_main2);
 
     }
 }
